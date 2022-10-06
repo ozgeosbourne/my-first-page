@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turkish Rakı</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+      }
+      ul {
+        list-style-type: none;
+        text-align: center;
+        margin-right: 20px;
+      }
+      .main-image {
+        display: block;
+        margin: 0 auto;
+        max-width: 60%;
+        border-radius: 12px;
+      }
+      .paragraph {
+        text-align: center;
+        line-height: 1.5;
+        margin: 20px 0 10px;
+        font-size: 18px;
+      }
+      .learn-more {
+        text-decoration: none;
+        line-height: 1.5px;
+        color: #ef5a5a;
+        font-size: 15px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 10px 50px;
+      }
+      .footer {
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 13px;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: #ef5a5a;
+        color: white;
+        font-size: 15px;
+        font-family: initial;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 2px 2px 5px lightslategrey;
+        transition: ease-in;
+      }
+      button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background: linear-gradient(
+        111.5deg,
+        rgb(228, 247, 255) 21.9%,
+        rgb(255, 216, 194) 92.2%
+      );
+    "
+  >
+    <div class="container">
+      <h1>Turkish Rakı</h1>
+      <h2>what is a <em>Rakı</em>?</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/043/376/original/raki-image.jpeg?1660293910"
+        alt="Turkish Rakı"
+        class="main-image"
+      />
+      <p class="paragraph">
+        Rakı or raki is an alcoholic drink made of twice-distilled grapes. It is
+        the national drink of Turkey. It is often served with seafood or meze.
+        Due to the aniseed it contains, raki changes color and becomes a milky
+        white when water is added and a glass of pure water to go with it gives
+        a distinct pleasant taste.
+
+        <br />
+        <a class="learn-more" href="https://en.wikipedia.org/wiki/Rak%C4%B1">
+          📖 Learn more on Wiki</a
+        >
+      </p>
+      <h3><em>It is served with:</em></h3>
+      <ul>
+        <li>Melon 🍈</li>
+        <li>Cheese 🧀</li>
+        <li>Fish 🐟</li>
+        <li>Turnip Juice 🍠</li>
+      </ul>
+      <button class="taste-button">Let me Taste</button>
+      <p class="footer">
+        This page was built by
+        <a
+          href="https://www.linkedin.com/in/özge-nuray-yaşar-12950887/"
+          target="_blank"
+        >
+          Özge Yaşar 🌱
+        </a>
+      </p>
+    </div>
+    <script>
+      function taste() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your e-mail?");
+        let emoji = prompt(
+          "What would like to drink your Rakı with? (add an emoji)"
+        );
+        if (name.length > 0) {
+        }
+        alert(
+          "Thanks " +
+            name +
+            "! We'll send you a tester. As we say in Turkish: Şerefe! " +
+            emoji
+        );
+      }
+      let tasteButton = document.querySelector(".taste-button");
+      tasteButton.addEventListener("click", taste);
+    </script>
+  </body>
+</html>
